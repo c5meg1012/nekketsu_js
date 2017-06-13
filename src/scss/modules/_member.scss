@@ -1,0 +1,27 @@
+.m_member {
+  overflow: hidden;
+
+  .thumbnail {
+    float: left;
+    width: 15.5rem;
+
+    img {
+      width: 100%;
+    }
+
+    @include max-screen($break_point) {
+      float: none;
+      width: 100%;;
+    }
+  }
+
+  .detail {
+    margin-left: 16.5rem;
+
+    @include max-screen($break_point) {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

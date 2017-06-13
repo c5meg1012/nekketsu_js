@@ -1,0 +1,57 @@
+html {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: $font_size_md;
+
+  @include max-screen($break_point) {
+    font-size: 14px;
+  }
+}
+
+.l_body {
+  background-color: $black;
+
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.l_container {
+  width: 61.25rem;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include max-screen($break_point) {
+    width: 100%;
+  }
+}
+
+a {
+  color: $anchor;
+  text-decoration: underline;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.l_main {
+  float: left;
+  width: 48.75rem;
+  margin: 2px 0;
+  color: $white;
+
+  @include max-screen($break_point) {
+    float: none;
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}

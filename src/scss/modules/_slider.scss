@@ -1,0 +1,18 @@
+.m_slider {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+
+  .slide {
+    position: absolute;
+    display: none;
+  }
+
+  .slide_1 {
+    display: block;
+  }
+}

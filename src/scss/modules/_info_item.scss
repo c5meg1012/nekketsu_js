@@ -1,0 +1,22 @@
+.m_info_item {
+  overflow: hidden;
+  line-height: 1.5;
+
+  .date {
+    float: left;
+    width: 120px;
+
+    @include max-screen($break_point) {
+      float: none;
+      width: 100%;;
+    }
+  }
+
+  .content {
+    margin-left: 120px;
+
+    @include max-screen($break_point) {
+      margin-left: 0;
+    }
+  }
+}

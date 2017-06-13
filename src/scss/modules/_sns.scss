@@ -1,0 +1,32 @@
+.m_sns {
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  @include max-screen($break_point) {
+    padding: 0 $spacer;
+  }
+
+  > .item {
+    width: 26.5rem;
+    float: left;
+    margin-right: .75rem;
+
+    &:last-child {
+      width: 21.25rem;
+      margin-right: 0;
+      float: right;
+    }
+
+    @include max-screen($break_point) {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

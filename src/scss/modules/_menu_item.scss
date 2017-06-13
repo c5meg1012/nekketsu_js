@@ -1,0 +1,46 @@
+.m_menu_item {
+  margin: 0 0 .5rem;
+  position: relative;
+
+  @include min-screen($break_point) {
+    &:hover::before {
+      content: '▶';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      margin-top: -5px;
+      color: $white;
+      font-size: 10px;
+    }
+  }
+
+  > a {
+    display: block;
+    width: 8rem;
+    margin: 0 auto;
+    background-image: url(../img/menu_text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+    color: $black;
+
+    &.info {
+      background-position: center 3px;
+    }
+
+    &.play {
+      background-position: center;
+    }
+
+    &.diary {
+      background-position: -11px -4.5rem;
+    }
+
+    &.member {
+      background-image: url(../img/menu_member.png);
+      background-position: -13px 0;
+    }
+  }
+}

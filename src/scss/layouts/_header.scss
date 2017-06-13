@@ -1,0 +1,25 @@
+.l_header {
+  border-bottom: 2px solid $white;
+  min-width: 61.25rem;
+
+  @include max-screen($break_point) {
+    min-width: 100%;
+  }
+
+  .inner {
+    padding: .5rem 0;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 3.75rem;
+
+    @include max-screen($break_point) {
+      display: block;
+    }
+  }
+}

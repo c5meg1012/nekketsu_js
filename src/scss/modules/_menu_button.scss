@@ -1,0 +1,35 @@
+.m_menu_button {
+  display: block;
+  width: 3.75rem;
+  padding: 1rem .75rem;
+  box-sizing: border-box;
+
+  > span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    margin-bottom: 10px;
+    transition: all .4s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.open {
+    > span:nth-of-type(1) {
+      -webkit-transform: translateY(17px) rotate(-47deg);
+      transform: translateY(13px) rotate(-47deg);
+    }
+
+    > span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    > span:nth-of-type(3) {
+      -webkit-transform: translateY(-15px) rotate(47deg);
+      transform: translateY(-11px) rotate(47deg);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.m_main_image {
+  margin-bottom: 2rem;
+
+  @include max-screen($break_point) {
+    margin-bottom: 0;
+  }
+}

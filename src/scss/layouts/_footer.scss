@@ -1,0 +1,33 @@
+.l_footer {
+  border-top: 2px solid $white;
+  color: $white;
+  min-width: 61.25rem;
+
+  @include max-screen($break_point) {
+    font-size: $font_size_sm;
+    min-width: 100%;
+  }
+
+  .inner {
+    padding: .75rem 0;;
+    overflow: hidden;
+  }
+
+  .left {
+    float: left;
+
+    @include max-screen($break_point) {
+      float: none;
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+  }
+
+  .right {
+    text-align: right;
+
+    @include max-screen($break_point) {
+      text-align: center;
+    }
+  }
+}

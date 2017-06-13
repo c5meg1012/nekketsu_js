@@ -1,0 +1,77 @@
+.l_boxes {
+  @include max-screen($break_point) {
+    padding: .75rem;
+  }
+}
+
+.l_box {
+  border: 2px solid $white;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+
+  @include max-screen($break_point) {
+    margin-bottom: 1rem;
+  }
+
+  > .box_header {
+    padding: 1.25rem;
+    border-bottom: 2px solid $white;
+
+    @include max-screen($break_point) {
+      padding: .75rem;
+    }
+
+    .title {
+      font-size: $font_size_lg;
+      font-weight: 700;
+
+      @include max-screen($break_point) {
+        font-size: $font_size_md;
+      }
+    }
+
+    .title_img {
+      width: 6rem;
+      background-image: url(../img/section_header_title.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 0;
+      padding-top: 1.5rem;
+      overflow: hidden;
+      color: $black;
+
+      @include max-screen($break_point) {
+        width: 5rem;
+        padding-top: 1.25rem;
+      }
+    }
+
+    .title_img.news {
+      background-position: center 0;
+    }
+
+    .title_img.diary {
+      background-position: center -71px;
+      @include max-screen($break_point) {
+        background-position: center -52px;
+      }
+    }
+
+    .title_img.notice {
+      background-position: center;
+    }
+  }
+
+  > .box_body {
+    padding: 1.25rem 1.25rem 1.25rem;
+
+    @include max-screen($break_point) {
+      padding: .75rem .75rem .75rem;
+    }
+  }
+
+  > .box_header.fit,
+  > .box_body.fit {
+    padding: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.m_sentence {
+  line-height: 1.5;
+
+  h3 {
+    position: relative;
+    padding: .5rem 0 .5rem 1rem;
+    font-weight: 700;
+    font-size: $font_size_lg;
+
+    &::before {
+      content: '▶';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      margin-top: -5px;
+      color: $white;
+      font-size: 10px;
+    }
+  }
+
+  p {
+    margin: 16px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .yellow {
+    color: $yellow;
+  }
+}

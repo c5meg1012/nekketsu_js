@@ -1,0 +1,31 @@
+.m_page_header {
+  padding: 1.5rem 0;
+
+  @include max-screen($break_point) {
+    padding: 1rem .75rem .75rem;
+  }
+
+  > .title_img {
+    width: 10rem;
+    background-image: url(../img/menu_text.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+    color: $black;
+
+    &.play {
+      background-position: center;
+    }
+
+    &.info {
+      background-position: center 3px;
+    }
+
+    &.member {
+      background-image: url(../img/menu_member.png);
+      background-position: -13px 0;
+    }
+  }
+}

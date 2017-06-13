@@ -1,0 +1,22 @@
+.m_menu {
+  border: 2px solid $white;
+  border-radius: .5rem;
+  padding: 1.5rem .5rem .5rem;;
+  position: relative;
+
+  > .header {
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    background-color: $black;
+    background-image: url(../img/menu_title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: $black;
+    width: 8rem;
+    height: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+}
