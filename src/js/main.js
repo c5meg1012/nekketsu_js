@@ -6,13 +6,6 @@ const slider = new Slider();
 const slideMenu = new SlideMenu();
 
 $(function(){
-
   slideMenu.playSlideMenu();
-
-  $.when(
-    slider.playSlideShow()
-  ).done (() => {
-    slider.setSliderHeight();
-  });
-
+  slider.playSlideShow()
 });

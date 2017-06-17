@@ -29,10 +29,4 @@ export default class Slider {
       this.nowVisibleBox++;
     }
   }
-
-  setSliderHeight() {
-    $('#js_animation_after_slider').css({
-      "padding-top": this.sliderHeight + 10.5
-    });
-  }
 }
