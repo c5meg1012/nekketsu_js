@@ -2,14 +2,16 @@
 
 import $ from 'jquery'
 
-export default class slideMenu {
+export default class SlideMenu {
   constructor () {
     this.menuButton = $("#js_animation_menu_button");
     this.slideMenuPart = $('#js_animation_menu');
     this.openedMenu = false;
     this.fixedWindow = false;
     this.scrollpos;
+  }
 
+  playSlideMenu () {
     this.menuButton.on('click', () => {
       this.menuAnimation(this.menuToggle);
       this.switchWindow ();

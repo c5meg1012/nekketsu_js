@@ -1,8 +1,18 @@
 import $ from 'jquery';
-import slideMenu from './slide_menu.js';
-import slider from './slider.js';
+import SlideMenu from './slide_menu.js';
+import Slider from './slider.js';
+
+const slider = new Slider();
+const slideMenu = new SlideMenu();
 
 $(function(){
-  new slideMenu();
-  new slider();
+
+  slideMenu.playSlideMenu();
+
+  $.when(
+    slider.playSlideShow()
+  ).done (() => {
+    slider.setSliderHeight();
+  });
+
 });

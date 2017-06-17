@@ -2,7 +2,7 @@
 
 import $ from 'jquery'
 
-export default class slider {
+export default class Slider {
   constructor () {
     this.nowVisibleBox = 1;
     this.wrapper = $('#js_animation_slider');
@@ -10,12 +10,9 @@ export default class slider {
     this.intervalTime = 5000;
     this.fadeTime = 1200;
     this.sliderHeight = $('.js_animation_slide').outerHeight();
+  }
 
-
-    setTimeout(() => {
-      this.setSliderHeight();
-    }, 10 );
-
+  playSlideShow() {
     setInterval(() => {
       this.slideShow();
     }, this.intervalTime);

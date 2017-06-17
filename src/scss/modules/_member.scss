@@ -11,7 +11,8 @@
 
     @include max-screen($break_point) {
       float: none;
-      width: 100%;;
+      width: 100%;
+      margin-bottom: $spacer;
     }
   }
 
@@ -21,7 +22,6 @@
     @include max-screen($break_point) {
       margin-left: 0;
       width: 100%;
-      text-align: center;
     }
   }
 }
