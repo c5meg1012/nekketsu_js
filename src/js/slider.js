@@ -21,7 +21,7 @@ export default class Slider {
   slideShow() {
     if (this.nowVisibleBox === this.countBoxes) {
       this.wrapper.find('.js_animation_slide:visible').fadeOut(this.fadeTime);
-      this.wrapper.find('.js_animation_slide:first-child').fadeIn(this.fadeTime + 800);
+      this.wrapper.find('.js_animation_slide_1').fadeIn(this.fadeTime + 800);
       this.nowVisibleBox = 1;
     } else{
       this.wrapper.find('.js_animation_slide:visible').fadeOut(this.fadeTime);
